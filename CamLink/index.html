@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WebRTC Remote Stream Viewer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h2>Join a Call</h2>
+  <input id="callInput" placeholder="Enter Call ID">
+  <button id="answerButton">Answer</button>
+  
+  <h2>Remote Stream</h2>
+  <video id="remoteVideo" autoplay playsinline></video>
+  
+  <h2>Hang Up</h2>
+  <button id="hangupButton" disabled>Hangup</button>
+
+  <script type="module" src="main.js"></script>
+</body>
+</html>
