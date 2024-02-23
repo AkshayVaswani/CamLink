@@ -8,17 +8,21 @@
 import SwiftUI
 
 struct ContentView: View {
+    @StateObject private var model = FrameHandler()
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
-        }
-        .padding()
+        FrameView(image: model.frame)
+            .ignoresSafeArea()
     }
 }
 
+
+struct ContentView_Previews: PreviewProvider{
+    static var previews: some View{
+        ContentView()
+    }
+    
+}
 #Preview {
     ContentView()
 }

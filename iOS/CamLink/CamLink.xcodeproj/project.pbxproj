@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 60;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,6 +11,8 @@
 		BABC62032B8839B7006B1DF4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABC62022B8839B7006B1DF4 /* ContentView.swift */; };
 		BABC62052B8839BB006B1DF4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BABC62042B8839BB006B1DF4 /* Assets.xcassets */; };
 		BABC62082B8839BB006B1DF4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BABC62072B8839BB006B1DF4 /* Preview Assets.xcassets */; };
+		BABC62112B886A15006B1DF4 /* FrameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABC62102B886A15006B1DF4 /* FrameView.swift */; };
+		BABC62132B886AB9006B1DF4 /* FrameHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABC62122B886AB9006B1DF4 /* FrameHandler.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		BABC62022B8839B7006B1DF4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		BABC62042B8839BB006B1DF4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BABC62072B8839BB006B1DF4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		BABC62102B886A15006B1DF4 /* FrameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameView.swift; sourceTree = "<group>"; };
+		BABC62122B886AB9006B1DF4 /* FrameHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameHandler.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +56,8 @@
 			isa = PBXGroup;
 			children = (
 				BABC62002B8839B7006B1DF4 /* CamLinkApp.swift */,
+				BABC62122B886AB9006B1DF4 /* FrameHandler.swift */,
+				BABC62102B886A15006B1DF4 /* FrameView.swift */,
 				BABC62022B8839B7006B1DF4 /* ContentView.swift */,
 				BABC62042B8839BB006B1DF4 /* Assets.xcassets */,
 				BABC62062B8839BB006B1DF4 /* Preview Content */,
@@ -103,7 +109,7 @@
 				};
 			};
 			buildConfigurationList = BABC61F82B8839B7006B1DF4 /* Build configuration list for PBXProject "CamLink" */;
-			compatibilityVersion = "Xcode 14.0";
+			compatibilityVersion = "Xcode 15.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -137,7 +143,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BABC62112B886A15006B1DF4 /* FrameView.swift in Sources */,
 				BABC62032B8839B7006B1DF4 /* ContentView.swift in Sources */,
+				BABC62132B886AB9006B1DF4 /* FrameHandler.swift in Sources */,
 				BABC62012B8839B7006B1DF4 /* CamLinkApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -272,8 +280,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"CamLink/Preview Content\"";
+				DEVELOPMENT_TEAM = 5FTUZMXYP3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "$(PRODUCT_NAME) Camera access needed to enable streaming.";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "$(PRODUCT_NAME) Microphone access needed to enable streaming.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -300,8 +311,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"CamLink/Preview Content\"";
+				DEVELOPMENT_TEAM = 5FTUZMXYP3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "$(PRODUCT_NAME) Camera access needed to enable streaming.";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "$(PRODUCT_NAME) Microphone access needed to enable streaming.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
